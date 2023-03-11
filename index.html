@@ -4,40 +4,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <meta name="keywords" content="ae0n java system design, java, jvm, plsar, non war file"/>
+    <meta name="keywords" content="ae0n java system design, java, jvm, plsar, non war file, fat jar, web development, website development"/>
 
-    <link href="icon.png" rel="icon" type="image/png" />
+    <link href="assets/icon.png" rel="icon" type="image/png" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
         body{background:#fff;text-align: center; font-family: Roboto;font-size:12px;}
-        #wrapper{width:201px; margin:71px auto; text-align: left;}
-        #wrapper img{width:190px;}
-        #wrapper #right{color:#232323}
+        #content-wrapper{margin:71px 150px; text-align: left;}
+
+        .logo-wrapper img{width:290px;}
+        .logo-wrapper span{font-size:29px;font-weight:400;display:block;margin-left:30px;}
+        .headline .headline.dos{line-height: 1.0em !important;}
+        .headline{font-size: 69px; font-weight: 900;}
+        .headline.dos{font-size:39px;}
+
+        .logo-wrapper{float:right;margin-left:70px;}
+        .logo-txt{font-size:109px;font-weight:900;font-style:italic;margin-top:-60px;}
+
+        h1{font-size:69px; font-weight: 900;margin-bottom:10px;}
+        h2{font-size:49px; font-weight:900;margin-top:0px;}
+        h2 a{font-size:29px;font-weight:400; color: #002aff;}
+        p{font-size:29px;margin-top:0px;line-height:1.3em;}
+
+        @media (max-width: 650px) {
+            #content-wrapper{margin:40px 30px;}
+            .logo-wrapper{float:none}
+        }
     </style>
 </head>
-<div id="wrapper">
-    <img src="icon.png"/>
-    <h1 style="font-size:69px;font-weight:900;font-style:italic;margin-top:-60px;">ae0n</h1>
-    <div id="right">
-        <p>We design j2ee systems and custom non .war java systems runnable
+<div id="content-wrapper">
+
+    <div class="logo-wrapper">
+        <img src="assets/icon.png"/>
+        <h1 class="logo-txt">ae0n<br/>
+            <span>Solutions</span>
+        </h1>
+    </div>
+
+    <div id="glide-left">
+        <p class="headline" id="home">We design custom web systems runnable
         via command line.</p>
 
-        <h2>STARGZ.R</h2>
+        <p class="headline dos"><mark>In other words, if you need a web site design and developed, we can help.</mark></p>
 
-        <p>STARGZ.R is an Java Server + API
+        <h1>Our Work</h1>
+        <h2>PLSA.R<br/>
+            <a href="http://plsar.net">www.plsar.net</a></h2>
+
+        <p>PLSA.R is an Java Server + API
             for high demand, low latency requirements.
-            STARGZ.R runs via one command so there are no .war
+            PLSA.R runs via one command so there are no .war
             files to deploy, no additional plugins to install
             it is a simple yet sophisticated alternative to
             container deployment environments. Performance wise,
-            1K concurrent requests is an estimate. We might be off.
-            Will you test it out? JMeter is broken?
+            in theory, it can handle any type of concurrent request
+            situation as long as your computer can handle the load.
         </p>
 
+        <h1>Contact Us</h1>
         <p><a href="mailto:mike@ae0n.net">mike@ae0n.net</a><br/>
             (907) 347-7052</p>
 
