@@ -7,12 +7,15 @@
     <meta name="keywords" content="ae0n java system design, java, jvm, plsar, non war file, fat jar, web development, website development"/>
 
     <link href="assets/icon.png" rel="icon" type="image/png" />
+
+    <script src="assets/bsshh.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
         body{background:#fff;text-align: center; font-family: Roboto;font-size:12px;}
-        #content-wrapper{margin:71px 150px; text-align: left;}
+        #content-wrapper{margin:71px 150px 10px 150px; text-align: left;}
 
         .logo-wrapper img{width:290px;}
         .logo-wrapper span{font-size:29px;font-weight:400;display:block;margin-left:30px;}
@@ -34,7 +37,10 @@
         }
     </style>
 </head>
+<body>
 <div id="content-wrapper">
+
+    <img src="assets/peoo.png" id="peoo"/>
 
     <div class="logo-wrapper">
         <img src="assets/icon.png"/>
@@ -49,9 +55,11 @@
 
         <p class="headline dos"><mark>In other words, if you need a web site design and developed, we can help.</mark></p>
 
-        <h1>Our Work</h1>
-        <h2>PLSA.R<br/>
-            <a href="http://plsar.net">www.plsar.net</a></h2>
+        <h1 style="font-size:120px;">Our Work</h1>
+
+        <h2>
+            <img src="assets/plsar.png" style="width:230px;"/><br/>
+            <a href="http://plsar.net" style="text-decoration: none;border-bottom: dotted 2px #0000ff">www.plsar.net</a></h2>
 
         <p>PLSA.R is an Java Server + API
             for high demand, low latency requirements.
@@ -62,6 +70,18 @@
             in theory, it can handle any type of concurrent request
             situation as long as your computer can handle the load.
         </p>
+
+        <h2>
+            <img src="assets/skyline.png" style="width:230px;"/><br/>
+            <a href="http://plsar.net" style="text-decoration: none;border-bottom: dotted 2px #0000ff">www.openskyline.io</a></h2>
+
+        <p>Skyline is in essence ASP.NET + ASP MVC.NET + IIS packaged into one single
+            composite runnable. You will not need to deploy to the IIS Application server.
+            Running Skyline is as easy as running a simple command:<br/>
+            <br/>
+            $ dotnet run<br/>
+            <br/>
+            That's it!</p>
 
         <h1>Contact Us</h1>
         <p><a href="mailto:mike@ae0n.net">mike@ae0n.net</a><br/>
@@ -77,5 +97,11 @@
     gtag('js', new Date());
 
     gtag('config', 'G-SSVYKQRZHT');
+
+    let peoo = document.getElementById("peoo");
+    let matrx = document.getElementById("content-wrapper")
+    let plsar = new RandomObjectMover(peoo, window);
+    plsar.start();
 </script>
+</body>
 </html>
