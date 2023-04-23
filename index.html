@@ -44,7 +44,6 @@
 <body>
 <div id="content-wrapper">
 
-    <img src="assets/peoo.png" id="peoo"/>
 
     <div class="logo-wrapper">
         <img src="assets/icon.png"/>
@@ -59,25 +58,30 @@
             we can help in pretty much any language.
             However we do choose the top two: Java & C# .NET to do most of our work in.</mark></p>
 
-        <h1 style="font-size:120px;">Our Work</h1>
+        <div id="cyborg" style="margin-top:-200px">
 
-        <h2>
-            <img src="assets/plsar.png" style="width:230px;"/><br/>
-            <a href="http://plsar.net" style="text-decoration: none;border-bottom: dotted 2px #0000ff">www.plsar.net</a></h2>
+            <img src="assets/peoo.png" id="peoo"/>
 
-        <p>PLSA.R is an Java Server + API
-            for high demand, low latency requirements.
-            PLSA.R runs via one command so there are no .war
-            files to deploy, no additional plugins to install
-            it is a simple yet sophisticated alternative to
-            container deployment environments. Performance wise,
-            in theory, it can handle any type of concurrent request
-            situation as long as your computer can handle the load.
-        </p>
-        <p>Running PLSA.R is as easy as running a simple command:
-            <pre><code>$ gradle run</code></pre></p>
+            <h1 style="font-size:120px;">Our Work</h1>
 
-        <p>Thats it!</p>
+            <h2>
+                <img src="assets/plsar.png" style="width:230px;"/><br/>
+                <a href="http://plsar.net" style="text-decoration: none;border-bottom: dotted 2px #0000ff">www.plsar.net</a></h2>
+
+            <p>PLSA.R is an Java Server + API
+                for high demand, low latency requirements.
+                PLSA.R runs via one command so there are no .war
+                files to deploy, no additional plugins to install
+                it is a simple yet sophisticated alternative to
+                container deployment environments. Performance wise,
+                in theory, it can handle any type of concurrent request
+                situation as long as your computer can handle the load.
+            </p>
+            <p>Running PLSA.R is as easy as running a simple command:
+                <pre><code>$ gradle run</code></pre></p>
+
+            <p>Thats it!</p>
+        </div>
 
         <h2>
             <img src="assets/skyline.png" style="width:230px;"/><br/>
@@ -106,8 +110,8 @@
     gtag('config', 'G-SSVYKQRZHT');
 
     let peoo = document.getElementById("peoo");
-    let matrx = document.getElementById("content-wrapper")
-    let plsar = new RandomObjectMover(peoo, window);
+    let matrx = document.getElementById("cyborg")
+    let plsar = new RandomObjectMover(peoo, matrx);
     plsar.start();
 </script>
 </body>
